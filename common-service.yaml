@@ -4,7 +4,7 @@ metadata:
   name: common-service
   labels:
     app: common-app
-spec
+spec:
   type: NodePort
   selector:
     app: common-app
