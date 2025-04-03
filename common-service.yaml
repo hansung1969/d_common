@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: common-deployment
+  labels:
+    app: common-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: common-app
+  template:
+    metadata:
+      labels:
+        app: common-app
+    spec:
+      containers:
+      - name: common
+        image: 796973511319.dkr.ecr.ap-northeast-2.amazonaws.com/hkit/kit:latest
+        ports:
+        - containerPort: 9090
