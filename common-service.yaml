@@ -10,7 +10,7 @@ spec:
     app: common-app
   ports:
     - name: http
-      nodePort: 30002
+      nodePort: 30001
       port: 9090
       targetPort: 9090
       protocol: TCP
